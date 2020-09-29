@@ -21,7 +21,7 @@ tags: [SEM5640]
 * What is an advanced internet application
   * Depends on complexity of business logic
 
-![alt text](./assets/img/magic.png "Logo Title Text 1")
+![alt text](/assets/img/magic.png "Logo Title Text 1")
 
 ## Multi-tier Internet Applications
   
