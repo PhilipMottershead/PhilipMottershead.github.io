@@ -1,0 +1,78 @@
+---
+title: "SEM5640 Lecture 1 - Internet Applications"
+date: 2020-09-28T15:00:00+0000
+categories: [Lecture Notes]
+tags: [SEM5640]
+---
+
+## Content for this Week
+
+* Lecture Slides will be added for JavaEE content
+  * Due 9am tomorrow
+  * One already added one to be added
+  * Tomorrow JaveBeans Practical
+    * VM in for practical
+  * Friday - .Net practical
+
+## Internet Applications
+
+* What is a internet application
+  * Static/ front and simple back-end
+* What is an advanced internet application
+  * Depends on complexity of business logic
+
+![alt text](/assets/images/magic.png "Logo Title Text 1")
+
+## Multi-tier Internet Applications
+  
+* Split into chunks
+* Tier - Distinct processing unit
+* Communication
+* Scalability
+  
+Example multi-Tier
+
+* Client
+* Web/Presentation
+* Business Logic
+* EIS/Data
+
+## Topics
+
+* JavaEE
+  * Building Web Applications
+  * JSF
+  * Java Beans
+  * Portability
+* .New/net core
+  * Building Web Applications
+  * Web forms/MVC
+  * C#
+  * Tier/layers
+* Enterprise Integration
+  * Making applications talk to each other
+  * ActiveMX
+  * Camel
+* Web Services
+  * Restful
+  * Soap
+* Building application
+  * Splitting application
+  * MicroServices
+  * Deployment
+    * Docker kubernetes
+    * Continuous deployment
+* Cloud computing
+* Testing applications
+
+## Structure
+
+1hr Seminar
+2 practicals java and .net for 4 weeks
+1 hr project meeting when it starts
+
+## Assessment
+
+75% group
+25% exam
+Tommorow

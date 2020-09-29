@@ -1,0 +1,103 @@
+---
+title: "CSM6120 Lecture 1 - What is AI"
+date: 2020-09-28T15:00:00+0000
+categories: [Lecture Notes]
+tags: [CSM6120]
+---
+
+Read annotated version of slides
+
+Sessions
+
+* 3/4 Monday
+* 11/12 Tuesday
+* 2/3 Thursday practical
+  * Where needed
+
+## Assessment
+
+* Report/Presentations
+  * handout 5th oct
+  * Due
+    * Report - 3rd nov
+    * Poster - 6th Nov
+    * Presentation - 11th Nov
+  * Feedback - 27 Nov
+* Essay 
+  * handout - 9th Nov
+  * Hand in - 7th Dec
+  * Feedback - 13th Jan
+  
+## What is AI
+
+* Games
+* Fiction
+* Robotics
+* Applications
+
+D. L. Parnas (2017): The real risks of artificial intelligence.
+ACM 60(10):27–31 Remarkably, those who use the term “artificial intelligence” have not defined that term.
+I first heard the term more than 50 years ago and have yet to hear a scientific definition.
+Even now, some AI experts say that defining AI is a difficult (and important) question—one that they are working on.
+“Artificial intelligence” remains a buzzword, a word that many think they understand but nobody can define.
+
+| humanly| rationally||
+|:---|:---:|---:|
+|Acting humanly | Acting Rationally|acting|
+|(build machines that do thinks like people do)|(design of rational agents)||
+|thinking humanly|thinking rationally|Thinking|
+|(cognitive modelling)|(cognitive modelling)|
+
+## Related and Relevant Fields
+
+* philosophy
+  * logic, mind-body problem, knowledge and action
+* mathematics
+  * logic, computability, probability
+* economics
+  * decision making, planning
+* neuroscience
+  * natural information processing•
+* psychology
+  * theory of thinking and acting
+* computer engineering
+  * efficient hardware platforms
+* control theory and cybernetics
+  * theory of self-controlled systems
+* linguistics
+
+## Some AI History
+
+* W. S. McCulloch and W. Pitts (1943): A logical calculus of the   ideas immanent in nervous activity.The Bulletin of Mathematical Biophysics5(4):115–133.
+* D. O. Hebb (1949):The Organization of Behavior.
+* A. M. Turing (1950): Computing machinery and intelligence.Mind59(236):433–460.
+* 1956: Dartmouth workshop (organised by J. McCarthy with the help of M.Minsky and C. Shannon among others)
+* H. Simon (1957):Models of Man:  Social and Rational.‘There are now in the world machines that think, that learn and that create. [. . . ] in a visible future the range of problems they can handle will be coextensive with the range to which the human mind has been applied'
+* Report of the Automatic Language Processing Advisory Committee (ALPAC1966):‘there has been no machine translation of general scientific text, and none is in immediate prospects.
+
+## A Brief History of AI (mostly according to Russell/Norvig)
+
+* 1943–1955: Gestation of AI
+* 1956: Birth of AI
+* 1952–1969: Great Expectations
+* 1966–1973: A Dose of Reality
+* 1969–1979: Knowledge-Based Systems
+* since 1980 AI becomes an Industry
+* since 1986 (First) Return of Neural Networks
+* since 1987 AI Adopts Scientific Method
+* since 1995 Emergence of Intelligent Agents
+* since 2000 Deep Learning (Second Return of Neural Networks)
+* since 2001 Availability of Very Large Data Sets
+
+## Weak vs Strong
+
+* Weak
+  * AI performing a relatively narrow task, restricted to a clearly defined scenario.
+  * tic tac toe or driving a car
+  * Not Controversial
+  * Not General
+  * Not Self conscious
+* Strong
+  * artificial general intelligence - being able to perform any (intellectual) task as well as a human
+  * ‘consciousness’:The appropriately programmed computer with the right inputs and outputs would thereby have a mind in exactly the same sense human beings have minds.
+  * Both is controversial.

@@ -22,7 +22,7 @@ url: 'protocol://domain'
 
 author: Philip Mottershead                  # change to your full name
 
-avatar: /assets/img/sample/bio-photo.jpg   # support internet resources
+avatar: /assets/img/bio-photo.jpg   # support internet resources
 
 github:
   username: PhilipMottershead             # change to your github username
