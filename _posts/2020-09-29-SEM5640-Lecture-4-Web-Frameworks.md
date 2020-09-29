@@ -178,17 +178,21 @@ tags: [SEM5640]
         <h:messages globalOnly="true"/>
         <p><h:outputLabel for="givenField" value="GivenName:"/>
             <h:inputText id= "givenField" label="GivenName"
-                value="#{personBean.given}" 
-                required="true"/></p>
+                    value="#{personBean.given}" 
+                    required="true"/></p>
         <p><h:outputLabel for="familyField" value="FamilyName:"/>
         <h:inputText id="familyField" label="FamilyName" 
-            value="#{personBean.family}" 
-            required="true">
+                value="#{personBean.family}" 
+                required="true">
             <f:validateLength minimum= "2" maximum= "30"/>
             </h:inputText></p>
         <p><h:outputLabel for="ageField" value="Age:"/>
-            <h:inputText id="ageField" label="Age" value= "#{personBean.age}" required="true">
-                <f:convertNumber maxFractionDigits="0" maxIntegerDigits= "3" type="number"/> 
+            <h:inputText id="ageField" label="Age"
+                    value= "#{personBean.age}" 
+                    required="true">
+                <f:convertNumber maxFractionDigits="0"
+                    maxIntegerDigits= "3"
+                    type="number"/>
             </h:inputText>
             <h:message for= "ageField"/></p>
         <p><h:commandButton action="index" value= "Save"/> </p>
