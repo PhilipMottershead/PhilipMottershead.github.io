@@ -9,6 +9,8 @@
 
 A minimal, sidebar, responsive web design Jekyll theme, focusing on text presentation, aim to help you easily record and share your knowledge. [Live Demo »](https://chirpy.cotes.info)
 
+![Automatic build](https://github.com/PhilipMottershead/PhilipMottershead.github.io/workflows/Automatic%20build/badge.svg)
+
 [![Devices Mockup](https://raw.githubusercontent.com/cotes2020/jekyll-theme-chirpy/master/assets/img/sample/devices-mockup.png)](https://chirpy.cotes.info)
 
 ## Table of Contents
