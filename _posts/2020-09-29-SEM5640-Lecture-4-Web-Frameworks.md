@@ -81,6 +81,7 @@ tags: [SEM5640]
 * AJAX
 
 ## JavaEE
+
 * Seen i18n and L10n?
 * Session Management
   * Seen
@@ -116,6 +117,7 @@ tags: [SEM5640]
 * Tag libraries for
   * adding components to web pages
   * connecting components to server-side objects
+![JSF Diagram](/assets/img/jsf.png "JSF Diagram")
 
 ## Developer jobs
 
@@ -144,6 +146,8 @@ tags: [SEM5640]
   * listeners – responses to component events
 * custom tags for custom components
 
+## index.xhtml
+
 ```xhtml
 <? xml   version = ’1.0’ encoding=’UTF−8’?>
 <!DOCTYPE html PUBLIC "−//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -170,6 +174,25 @@ tags: [SEM5640]
 </html>
 ```
 
+* XHTML (transitional)
+* tags from two sets:
+  * [XHTML](http://www.w3.org/1999/xhtml) – standard XHTML
+  * [JSF](http://java.sun.com/jsf/html) – JSF version, h namespace
+* some XHTML are “mirrored” by jsf/html elements
+  * jsf/html versions are components
+    * added functionality
+    * processed by the servlet
+* some jsf/html tags are not in XHTML
+  * e.g. h:graphicImage
+* the value attribute value has odd syntax
+  * Expression language (EL)
+  * Access to Java
+* XHTML can be used
+  * some tags not available in jsf/html space
+  * passed through to output
+
+## create.xhtml
+
 ```xhtml
 <h:body>
     <h:graphicImage value= "#{resource[’images:logo.png’]}"/>
@@ -178,17 +201,17 @@ tags: [SEM5640]
         <h:messages globalOnly="true"/>
         <p><h:outputLabel for="givenField" value="GivenName:"/>
             <h:inputText id= "givenField" label="GivenName"
-                    value="#{personBean.given}" 
+                    value="#{personBean.given}"
                     required="true"/></p>
         <p><h:outputLabel for="familyField" value="FamilyName:"/>
-        <h:inputText id="familyField" label="FamilyName" 
-                value="#{personBean.family}" 
+        <h:inputText id="familyField" label="FamilyName"
+                value="#{personBean.family}"
                 required="true">
             <f:validateLength minimum= "2" maximum= "30"/>
             </h:inputText></p>
         <p><h:outputLabel for="ageField" value="Age:"/>
             <h:inputText id="ageField" label="Age"
-                    value= "#{personBean.age}" 
+                    value= "#{personBean.age}"
                     required="true">
                 <f:convertNumber maxFractionDigits="0"
                     maxIntegerDigits= "3"
@@ -200,3 +223,112 @@ tags: [SEM5640]
 </h:body>
 </html>
 ```
+
+* collecting information
+* much of the page is in an h:form
+  * more powerful than XHTML \<form>
+  * does not require action and method (framework provided)
+* h:messages causes display of validation or conversion errors
+  * for all components
+  * h:message can be associated with one component
+* h:outputLabel associated with an input (for non-graphical rendering)
+* inputText has a label attribute for error reporting
+* required is a validation check
+* f:validateLength is a built-in special validation check
+* all 3 inputs have a value
+  * set by EL
+  * remembered between displays
+    * error reporting
+    * but actually any re-display
+  * stored in a Java Bean (an instance of a class)
+* <h:induct id="ageField" has a converter
+  * built in
+* h:commandButton will submit
+  * action attribute is “what to do next”
+    * evaluate to a string, which determines next page
+    * defaults to a .xhtml page of that name
+
+## JSF components
+
+* Html equivalents
+  * image - graphicImage
+  * link - commandLink
+  * form - form
+    * Links JSF to code
+  * input - inputText
+  * text - OutputLabel
+* Attributes
+  * required - Validates a input is entered
+  * convertNumber - coverts a input into number and can do validation on these numbers
+  * validateLength - Validates length of input
+
+## View Snippet
+
+```xhtml
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:h="http://java.sun.com/jsf/html">
+  <h:head>
+    <title>FaceletTitle</title>
+  </h:head>
+  <h:body>
+    <h:graphicImage value="#{resource[’images:logo.png’]}"/>
+    <h1>View Person Details </h1>
+    <h:panelGrid columns= " 2 " >
+      <h:outputText value="Given name: "/>
+      <h:outputText value="#{personBean.given}"/>
+      <h:outputText value="Family name: "/>
+      <h:outputText value="#{personBean.family}"/>
+      <h:outputText value="Age : "/>
+      <h:outputText value="#{personBean.age}"/>
+      #{personBean.given}
+    </h:panelGrid>
+    <h:form>
+      <h:commandButton value="Home" action="index"/>
+    </h:form>
+  </h:body>
+</html>
+```
+
+* the EL can access the same Java Bean instance
+  * Can Access Backing Beans
+  * Managed by Web Containers
+  * Accessible Anywhere in context
+
+## Bean Snippet
+
+```java
+@ManagedBean
+@SessionScoped
+public class personBean implements Serializable {
+  public personBean ( ) {
+  }
+  private String given ;
+  / ∗∗
+  ∗ Get the value of given
+  ∗
+  ∗ @return the value of given
+  ∗ /
+  public String getGiven ( ) {
+    return given;
+  }
+  / ∗∗
+  ∗ Set the value of given
+  ∗
+  ∗ @param given new value of given
+  ∗ /
+  public void setGiven (String given){
+    this.given = given;
+  }
+```
+
+* Annotated
+  * @Named
+    * Accessible by the EE
+    * Managed by container
+  * @Session Scoped
+    * Controls Scope
+    * @RequestScope
+    * @ApplicationScope
+  * Contains a set of Attributes
+
+[Link to Workshop 1 code](https://github.com/PhilipMottershead/SEM5640-JavaEE-Workshop1)
