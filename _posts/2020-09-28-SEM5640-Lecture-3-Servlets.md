@@ -2,7 +2,7 @@
 title: "SEM5640 Lecture 3 - Servlets"
 date: 2020-09-28T15:00:00+0000
 categories: [Lecture Notes]
-tags: [SEM5640]
+tags: [SEM5640,JavaEE]
 ---
 ## Servlets
 
@@ -51,13 +51,11 @@ tags: [SEM5640]
     * override if you want functionality  
     * doGet and doPost commonly use the same method
 
+
 ```java
 protected void doGet(HttpServletRequest request,
                 HttpServletResponse response)
-                throws ServletException, IOException{
-    processRequest(request,response);
-}
-
+                throws ServletException, IJavaEE
 protected void doPost(HttpServletRequest request,
                 HttpServletResponse response)
                 throws ServletException, IOException{
@@ -110,8 +108,7 @@ protected void processRequest(HttpServletRequest request,
 * HttpServletRequest, HttpServletResponse
   * Passed as parameters
 * HttpServletRequest provides access (getters and parsers) to
-  * HTTP headers
-    * some “specials” - e.g. locale
+  * HTTP headersJavaEE
   * HTTP parameters (GET and POST)
   * The request body
   * multipart/form-data - input stream for file upload
@@ -144,3 +141,5 @@ dispatcher.forward(request,response);
 * Is that what we want?
 * But how do we know which user is which
   * HTTP?
+
+[Code for examples can be found here](https://github.com/PhilipMottershead/SEM5620_Servlets)

@@ -2,7 +2,7 @@
 title: "SEM5640 Lecture 2 - JakartaEE"
 date: 2020-09-28T16:00:00+0000
 categories: [Lecture Notes]
-tags: [SEM5640]
+tags: [SEM5640,JavaEE]
 ---
 ## JakartaEE
 
@@ -196,7 +196,7 @@ Provides
   * A set of modules .ear
 
 ![War Structure](/assets/img/war-structure.png ".war Structure")
-
+JavaEE
 ## JavaEE versions
 
 * J2EE 1.2 (1999)
