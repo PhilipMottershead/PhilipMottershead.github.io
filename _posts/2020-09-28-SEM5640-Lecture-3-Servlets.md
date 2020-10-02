@@ -51,7 +51,6 @@ tags: [SEM5640,JavaEE]
     * override if you want functionality  
     * doGet and doPost commonly use the same method
 
-
 ```java
 protected void doGet(HttpServletRequest request,
                 HttpServletResponse response)
