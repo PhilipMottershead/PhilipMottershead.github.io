@@ -2,7 +2,7 @@
 title: "SEM5640 Lecture 4 - Web Frameworks"
 date: 2020-09-29T10:00:00+0000
 categories: [Lecture Notes]
-tags: [SEM5640]
+tags: [SEM5640,JavaEE,JSF]
 ---
 ## Web application frameworks
 
