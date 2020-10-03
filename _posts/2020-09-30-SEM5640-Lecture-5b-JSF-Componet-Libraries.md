@@ -109,3 +109,6 @@ tags: [SEM5640,JavaEE,JSF]
       * support for navigation
       * a method can return a string
       * or it’s a literal
+
+* Reserved words
+  * and or not eq ne lt gt le ge true false null instanceof empty div mod
