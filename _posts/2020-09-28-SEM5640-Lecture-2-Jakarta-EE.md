@@ -1,6 +1,6 @@
 ---
 title: "SEM5640 Lecture 2 - JakartaEE"
-date: 2020-09-28T16:00:00+0000
+date: 2020-09-28T14:00:00+0000
 categories: [Lecture Notes]
 tags: [SEM5640,JavaEE]
 ---
