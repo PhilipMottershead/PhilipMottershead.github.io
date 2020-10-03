@@ -1,5 +1,5 @@
 ---
-title: "SEM5640 Lecture 4 - Dotnet Intro"
+title: "SEM5640 Lecture 6 - Dotnet Intro"
 date: 2020-10-02T11:00:00+0000
 categories: [Lecture Notes]
 tags: [SEM5640,Dotnet]
